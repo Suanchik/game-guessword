@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/game-guessword/static/css/main.e0c5fe48.chunk.css",
+    "main.js": "/game-guessword/static/js/main.b975b7d5.chunk.js",
+    "main.js.map": "/game-guessword/static/js/main.b975b7d5.chunk.js.map",
+    "runtime-main.js": "/game-guessword/static/js/runtime-main.e7dcd045.js",
+    "runtime-main.js.map": "/game-guessword/static/js/runtime-main.e7dcd045.js.map",
+    "static/js/2.c3c28f23.chunk.js": "/game-guessword/static/js/2.c3c28f23.chunk.js",
+    "static/js/2.c3c28f23.chunk.js.map": "/game-guessword/static/js/2.c3c28f23.chunk.js.map",
+    "static/js/3.20b2a39b.chunk.js": "/game-guessword/static/js/3.20b2a39b.chunk.js",
+    "static/js/3.20b2a39b.chunk.js.map": "/game-guessword/static/js/3.20b2a39b.chunk.js.map",
+    "index.html": "/game-guessword/index.html",
+    "static/css/main.e0c5fe48.chunk.css.map": "/game-guessword/static/css/main.e0c5fe48.chunk.css.map",
+    "static/js/2.c3c28f23.chunk.js.LICENSE.txt": "/game-guessword/static/js/2.c3c28f23.chunk.js.LICENSE.txt",
+    "static/media/down.7fc63074.jpg": "/game-guessword/static/media/down.7fc63074.jpg",
+    "static/media/up.54168c34.jpg": "/game-guessword/static/media/up.54168c34.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e7dcd045.js",
+    "static/js/2.c3c28f23.chunk.js",
+    "static/css/main.e0c5fe48.chunk.css",
+    "static/js/main.b975b7d5.chunk.js"
+  ]
+}
