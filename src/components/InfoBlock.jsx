@@ -9,6 +9,7 @@ import up from './img/up.jpg';
 import down from './img/down.jpg';
 
 const InfoBlock = ({ errorLimit, wins, lose, youwin }) => {
+
     return (
         <div className="errorsZone">
             <div className="limitZone">
