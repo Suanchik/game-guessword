@@ -24,18 +24,22 @@ const Crossword = () => {
     const [guesdWord, setguesdWord] = useState(null);
 
     useEffect(() => {
-        setcopywordList(levels[level].wordList)
-        setlistOfWords(levels[level].wordList)
-        setcopyinfo(levels[level].info)
+        setcopywordList(levels[level].wordList);
+        setlistOfWords(levels[level].wordList);
+        setcopyinfo(levels[level].info);
+        setleters('')
+        setwords('')
+        sethideword('')
+        setchoose('')
     }, [level])
 
     let redTime = () => {
-        document.querySelector('.wors').style.backgroundColor = 'tomato'
+        document.querySelector('.wors').style.backgroundColor = 'red'
         seterrorLimit(errorLimit + 1)
     }
 
     let whiteTime = () => {
-        document.querySelector('.wors').style.backgroundColor = '#50f1e9'
+        document.querySelector('.wors').style.backgroundColor = 'rgb(255, 196, 0)'
         seterrorLimit(errorLimit + 1)
     }
 
@@ -71,7 +75,8 @@ const Crossword = () => {
         if (youwin) {
             setlistOfWords(copywordList);
         }
-    }, [youwin])
+    }, [youwin]);
+
 
     useEffect(() => {
         if (words !== '') {
@@ -140,7 +145,6 @@ const Crossword = () => {
     return (
         <div>
             <div className="nav">
-                <span className="chooseLevel">выбрать уровень</span>
                 {levelslenght.map(el => <span onClick={() => setlevel(el)} className={level === el ? "levelsChoosen" : "levels"}>{el === 0 ? "разминка" : "уровень - " + el} </span>)}
             </div>
             <div className="alfafit">
@@ -148,7 +152,7 @@ const Crossword = () => {
                     <h2><span className="h2">{level < 1 ? 'разминка' : 'уровень - ' + level}</span></h2>
                 </div>
                 <div className="wors">
-                    <div style={youlose || youwin || guesdWord ? { marginBottom: '100px' } : null}>
+                    <div style={{ height: '220px' }}>
                         <Words hideword={hideword}
                             level={level}
                             nextLevel={nextLevel}
@@ -158,13 +162,12 @@ const Crossword = () => {
                             youwin={youwin}
                             removeGame={removeGame}
                             guesdWord={guesdWord}
-                            hideword={hideword}
                             setguesdWord={setguesdWord}
                             setleters={setleters} />
                     </div>
                     <Alfafit leters={leters} youlose={youlose} youwin={youwin} guesdWord={guesdWord} getElementElement={getElementElement} />
-                    <InfoBlock youwin={youwin} errorLimit={errorLimit} wins={wins} lose={lose} />
                 </div>
+                <InfoBlock youwin={youwin} errorLimit={errorLimit} wins={wins} lose={lose} />
             </div>
         </div>
     )

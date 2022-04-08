@@ -18,8 +18,10 @@ const InfoBlock = ({ errorLimit, wins, lose, youwin }) => {
                     youwin ? funny : errorLimit === 4 ? smile5 : errorLimit === 3 ? smile4 : errorLimit === 2 ? smile3 : errorLimit === 1 ? smile2 : errorLimit === 0 ? smile1 : null
                 } alt="" />
                 <span className="limit">лимит   <span className="errorNum">4</span></span></div>
-            <div className="wins"> <img className="up" src={up} alt="like" /> победы: {wins}</div>
-            <div className="loses"> <img className="down" src={down} alt="dislike" /> проигрыши: {lose}</div>
+            <div className="winsloses">
+                <div className="wins"> <img className="up" src={up} alt="like" /> победы: {wins}</div>
+                <div className="loses"> <img className="down" src={down} alt="dislike" /> проигрыши: {lose}</div>
+            </div>
         </div>
     )
 };

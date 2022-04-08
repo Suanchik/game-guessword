@@ -37,23 +37,21 @@ form div {
   height: 18px;
   width: 18px;
   display: inline-block;
-  margin-left: 10px;
-  padding: 5px;
-  background-color: #3e9490;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 7px;
+  background-color: #ffffff;
   margin-top: 5px;
   border-radius: 5px;
   cursor: pointer;
-  color: white;
-  font-weight: bold;
-  box-shadow: 2px 2px 3px 2px rgb(0, 0, 0, 0.8);
+  box-shadow: 2px 2px 3px 1px rgba(255, 255, 255, 0.8);
   margin-bottom: 5px;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .alfelements:hover {
-  background-color: #3a8f8b;
-  box-shadow: 0px 2px 1px 0px rgb(0, 0, 0, 0.6);
-  color: rgb(255, 255, 255, 0.9);
+  background-color: #f1f1f1;
+  box-shadow: 0px 2px 1px 0px rgba(255, 255, 255, 0.9);
   font-size: 15;
 }
 
@@ -65,59 +63,67 @@ form div {
 }
 
 .wors {
-  box-shadow: 0 0 0px 0px rgb(0, 0, 0, 0.9);
   margin-bottom: 30px;
-  background-color: #50f1e9;
-  padding: 20px;
-  width: 700px;
-  border-radius: 15px;
-  box-shadow: 5px 7px 5px 0 rgb(0, 0, 0, 0.7);
+  padding: 30px;
+  width: 750px;
+  border-radius: 3px 10px 3px 3px;
+  background-color: rgb(235, 219, 170);
+  box-shadow: 0 0 2.5px -1px black;
+  height: 320px;
 }
 
 .levels {
-  background-color: #66faf3;
-  display: inline-block;
+  display: block;
+  color: #e6e6e6;
   border-radius: 5px;
   margin: 0px 20px 0px 0px;
-  padding: 5px 10px 5px 10px;
+  padding: 10px 20px 10px 20px;
   cursor: pointer;
-  font-weight: bold;
-  opacity: 0.9;
-  box-shadow: 3px 5px 3px 1px rgb(0, 0, 0, 0.8);
+  margin-bottom: 10px;
+  width: 120px;
+  box-shadow: 0 0 3.5px -1px rgb(207, 0, 0);
 }
 
 .levels:hover {
-  opacity: 1;
+  background-color: rgb(255, 0, 0);
+  transition: all ease-in-out 0.4s;
 }
 
 .levelsChoosen {
-  background-color: #5ee2dc;
-  display: inline-block;
-  border-radius: 2px;
-  margin: 0 20px 0px 0px;
-  padding: 5px 10px 5px 10px;
+  color: #ffffff;
+  display: block;
+  width: 120px;
+  border-radius: 5px;
+  margin: 0 20px 10px 0px;
+  padding: 10px 20px 10px 20px;
   cursor: pointer;
   color: black;
-  font-weight: bold;
-  box-shadow: 1px 1px 1px 1px rgb(0, 0, 0, 0.5);
 }
 
 .nav {
-  height: 60px;
+  height: 80px;
   margin: 10px;
-  box-shadow: 3px 5px 3px 1px rgb(0, 0, 0, 0.3);
-  border-radius: 5px;
+  border-radius: 10px 3px 3px 10px;
+  position: absolute;
+  margin-left: 443px;
+  margin-top: 57px;
+  height: 625px;
+  width: 160px;
+  padding: 10px;
   background-color: #fff;
+  box-shadow: 0 0 2.5px -1px black;
+  background-color: #fc9380;
 }
 
 .chooseLevel {
   font-size: 25px;
-  font-weight: bold;
   width: 235px;
   padding: 10px;
   border-radius: 5px;
   display: inline-block;
   margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 10px;
 }
 
 a {
@@ -137,69 +143,86 @@ br .a {
 }
 
 .errorsZone {
-  background-color: rgb(247, 247, 247);
+  display: grid;
+  grid-template-columns: 5fr 5fr;
+  gap: 10px;
+  background-color: rgb(255, 255, 255);
   padding: 10px;
-  border-radius: 10px;
-  margin-top: 20px;
+  border-radius: 3px 3px 10px 0;
+  margin-top: -18px;
   font-size: larger;
+  position: absolute;
+  margin-left: 0px;
+  height: 233px;
+  width: 790px;
+  box-shadow: 0 0 2.5px -1px black;
 }
 
 .error {
-  background-color: tomato;
-  padding: 6px 6px 6px 0;
-  border-radius: 3px;
-  color: white;
+  margin-top: 15px;
+  margin-bottom: 19px;
+  background-color: rgb(243, 213, 208);
+  color: red;
+  padding: 8px 15px 15px 5px;
+  border-radius: 15px;
   height: 30px;
+  margin-left: -50px;
+  width: 150px;
   display: inline-block;
   box-shadow: 3px 5px 3px 0px rgb(0, 0, 0, 0.5);
 }
 
 .limitZone {
-  margin: 7px 0 7px 0;
+  margin: 0px 0 7px 0;
+  background-color: rgb(241, 241, 241);
+  padding: 20px;
+  border-radius: 25px;
+  height: 190px;
 }
 
 .errorNum {
-  display: inline-block;
   width: 20px;
   font-weight: bold;
-  padding: 1px 3px 1px 3px;
+  padding: 3px 6px 2px 6px;
   border-radius: 5px;
-  box-shadow: 0 0 2px 0px white;
-  font-size: 25px;
+  font-size: 26px;
   margin: 0 3px 0 3px;
-  box-shadow: 1px 1px 1px 0px rgb(0, 0, 0, 0.4);
 }
 
 .limit {
   background-color: #56c6e9;
-  padding: 6px 0 6px 6px;
-  border-radius: 3px;
-  color: white;
+  padding: 8px 5px 15px 15px;
+  border-radius: 15px;
   height: 30px;
-  display: inline-block;
+  display: block;
+  margin-top: 10px;
+  width: 210px;
+  margin-left: 26px;
   box-shadow: 3px 5px 3px 0px rgb(0, 0, 0, 0.5);
 }
 
+.winsloses {
+  height: 210px;
+  background-color: rgb(231, 231, 231);
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+}
+
 .wins {
-  background-color: #20b2aa;
+  background-color: #ffffff;
   margin: 30px 0 3px 0;
-  color: rgb(255, 255, 234);
-  height: 40px;
-  padding: 3px;
-  padding-right: 20px;
-  font-weight: bold;
-  border-radius: 5px;
+  height: 50px;
+  padding: 10px 0px 0px 10px;
+  border-radius: 25px;
 }
 
 .loses {
-  border-radius: 5px;
-  background-color: #56c6e9;
-  margin: 3px 0 3px 0;
-  color: rgb(255, 255, 234);
-  height: 40px;
-  padding: 3px;
-  padding-right: 20px;
-  font-weight: bold;
+  background-color: #ffffff;
+  margin: 30px 0 3px 0;
+  color: red;
+  height: 50px;
+  padding: 10px 0px 0px 10px;
+  border-radius: 25px;
 }
 
 .oposite {
@@ -208,33 +231,31 @@ br .a {
 
 .loseAll {
   font-size: larger;
-  background-color: rgba(247, 83, 54, 0.9);
+  background-color: rgba(236, 35, 0, 0.9);
   color: rgb(255, 255, 255);
-  padding: 5px 20px 5px 20px;
+  padding: 15px 0px 15px 0px;
   border-radius: 5px;
   font-size: bold;
 }
 
 .guessedAll {
   font-size: larger;
-  background-color: #20b2aa;
+  background-color: rgb(88, 216, 88);
   color: rgb(255, 255, 255);
-  padding: 5px 10px 5px 10px;
+  padding: 15px 0px 15px 0px;
   border-radius: 5px;
   font-size: bold;
-  box-shadow: 0 0 3px 0 white;
 }
 
 .onemore {
-  padding: 5px 10px 5px 10px;
+  padding: 10px 10px 10px 10px;
   background-color: rgb(247, 247, 247);
-  width: 100px;
+  width: 200px;
   border-radius: 5px;
   cursor: pointer;
-  margin-left: 41.5%;
+  margin-left: 35.5%;
   margin-top: 19px;
-  box-shadow: 2px 3px 1px 2px rgb(0, 0, 0, 0.6);
-  font-weight: bold;
+  box-shadow: 2px 3px 1px 2px rgb(0, 0, 0, 0.3);
 }
 
 .onemore:hover {
@@ -283,7 +304,7 @@ br .a {
 .zagadka {
   padding: 10px;
   word-break: break-all;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   margin: 25px 0 25px 0;
   min-height: 100px;
   border-radius: 5px;
@@ -292,14 +313,14 @@ br .a {
 }
 
 .next {
-  padding: 5px 10px 5px 10px;
+  padding: 10px 10px 10px 10px;
   background-color: rgb(247, 247, 247);
-  width: 100px;
+  width: 200px;
   border-radius: 5px;
   cursor: pointer;
-  margin-left: 41.5%;
+  margin-left: 35.5%;
   margin-top: 35px;
-  box-shadow: 2px 3px 1px 2px rgb(0, 0, 0, 0.6);
+  box-shadow: 2px 3px 1px 2px rgb(0, 0, 0, 0.4);
   font-weight: bold;
 }
 .guesed {
@@ -321,11 +342,11 @@ br .a {
   width: 100%;
 }
 .alfelementsBlock {
-  margin-top: -1px;
-  background-color: #fff;
+  background-color: rgb(97, 97, 97);
   padding: 10px;
+  font-weight: normal;
   border-radius: 5px;
-  box-shadow: 2px 5px 3px 0 rgb(0, 0, 0, 0.5);
+  box-shadow: 2px 5px 3px 0 rgb(0, 0, 0, 0.9);
 }
 
 .smile {
@@ -334,39 +355,33 @@ br .a {
   border-radius: 50%;
   box-shadow: 0 0 1px 0 black;
   margin: 0 15px 0 15px;
-}
-
-h2 {
-  width: 732px;
-  text-align: center;
-  font-size: 30px;
-  padding: 5px;
-  border-radius: 15px;
-  font-weight: bold;
-  opacity: 0.9;
+  margin-bottom: -20px;
 }
 
 .h2 {
   display: inline-block;
-  padding: 0 15px 5px 15px;
   border-radius: 5px;
-  background-color: #fff;
-  box-shadow: 3px 5px 3px 1px rgb(0, 0, 0, 0.8);
+  font-weight: normal;
+  margin-left: 299px;
+  color: rgb(0, 0, 0, 0.7);
+  font-size: 30px;
+  font-weight: bold;
+  width: 200px;
 }
 
 .down {
-  width: 29px;
+  width: 39px;
   border-radius: 50%;
-  float: left;
-  margin: 5px 0 0 5px;
+  float: right;
+  margin: -1px 15px 0 5px;
   box-shadow: 2px 4px 2px 0px rgb(0, 0, 0, 0.5);
 }
 
 .up {
-  width: 29px;
+  width: 39px;
   border-radius: 50%;
-  float: left;
-  margin: 5px 0 0 5px;
+  float: right;
+  margin: -1px 15px 0 5px;
   box-shadow: 2px 4px 2px 0px rgb(0, 0, 0, 0.5);
 }
 

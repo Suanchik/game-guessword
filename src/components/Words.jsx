@@ -10,7 +10,7 @@ const Words = ({ hideword, youlose, youwin, removeGame, guesdWord, setguesdWord,
             {youlose || youwin ?
                 <div>
                     {youlose || !youwin ? <div className="loseAll">вы проиграли</div> :
-                        level < 2 ? <div className="guessedAll">вы угадали все слова !!!</div> :
+                        level < 2 ? <div className="guessedAll">вы угадали все слова</div> :
                             <div className="guessedAll">вы выиграли игру</div>
                     }
                     {youlose || !youwin ?
@@ -30,7 +30,7 @@ const Words = ({ hideword, youlose, youwin, removeGame, guesdWord, setguesdWord,
                             <div onClick={() => { setguesdWord(null); setleters('') }} className="next">следующее</div>
                         </div>}
                 </div>}
-            {youlose || youwin ? null : guesdWord ? null : <div className="zagadka"><i>{info[wordIndex]}</i></div>}
+            {youlose || youwin ? null : guesdWord ? null : <div className="zagadka">{info[wordIndex]}</div>}
         </div>
     )
 };
