@@ -39,7 +39,7 @@ const Crossword = () => {
     }
 
     let whiteTime = () => {
-        document.querySelector('.wors').style.backgroundColor = 'rgb(255, 196, 0)'
+        document.querySelector('.wors').style.backgroundColor = 'rgb(34, 34, 34)'
         seterrorLimit(errorLimit + 1)
     }
 

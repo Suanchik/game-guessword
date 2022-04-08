@@ -67,14 +67,14 @@ form div {
   padding: 30px;
   width: 750px;
   border-radius: 3px 10px 3px 3px;
-  background-color: rgb(235, 219, 170);
+  background-color: rgb(34, 34, 34);
   box-shadow: 0 0 2.5px -1px black;
   height: 320px;
 }
 
 .levels {
   display: block;
-  color: #e6e6e6;
+  color: #ffffff;
   border-radius: 5px;
   margin: 0px 20px 0px 0px;
   padding: 10px 20px 10px 20px;
@@ -85,7 +85,10 @@ form div {
 }
 
 .levels:hover {
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(255, 255, 255);
+  color: black;
+  font-weight: bold;
+  box-shadow: 0 0 0 2px black;
   transition: all ease-in-out 0.4s;
 }
 
@@ -111,12 +114,13 @@ form div {
   width: 160px;
   padding: 10px;
   background-color: #fff;
-  box-shadow: 0 0 2.5px -1px black;
-  background-color: #fc9380;
+  box-shadow: 0 0 0px 2px black;
+  background-color: #df7f6e;
 }
 
 .chooseLevel {
   font-size: 25px;
+  font-weight: bold;
   width: 235px;
   padding: 10px;
   border-radius: 5px;
@@ -146,7 +150,7 @@ br .a {
   display: grid;
   grid-template-columns: 5fr 5fr;
   gap: 10px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(241, 241, 241);
   padding: 10px;
   border-radius: 3px 3px 10px 0;
   margin-top: -18px;
@@ -155,29 +159,30 @@ br .a {
   margin-left: 0px;
   height: 233px;
   width: 790px;
-  box-shadow: 0 0 2.5px -1px black;
+  box-shadow: 0 0 0px 2px black;
 }
 
 .error {
   margin-top: 15px;
   margin-bottom: 19px;
-  background-color: rgb(243, 213, 208);
+  background-color: rgb(255, 255, 255);
   color: red;
   padding: 8px 15px 15px 5px;
-  border-radius: 15px;
+  border-radius: 5px;
   height: 30px;
   margin-left: -50px;
   width: 150px;
   display: inline-block;
-  box-shadow: 3px 5px 3px 0px rgb(0, 0, 0, 0.5);
+  box-shadow: 0 0 0 2px black;
 }
 
 .limitZone {
   margin: 0px 0 7px 0;
-  background-color: rgb(241, 241, 241);
+  background-color: rgb(182, 182, 182);
   padding: 20px;
-  border-radius: 25px;
+  border-radius: 10px;
   height: 190px;
+  box-shadow: 0 0 0 2px black;
 }
 
 .errorNum {
@@ -190,22 +195,23 @@ br .a {
 }
 
 .limit {
-  background-color: #56c6e9;
+  background-color: #000000;
   padding: 8px 5px 15px 15px;
-  border-radius: 15px;
+  color: white;
+  border-radius: 5px;
   height: 30px;
   display: block;
   margin-top: 10px;
   width: 210px;
   margin-left: 26px;
-  box-shadow: 3px 5px 3px 0px rgb(0, 0, 0, 0.5);
 }
 
 .winsloses {
   height: 210px;
-  background-color: rgb(231, 231, 231);
+  background-color: rgb(182, 182, 182);
   padding: 10px 20px 10px 20px;
-  border-radius: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 0 2px black;
 }
 
 .wins {
@@ -213,7 +219,9 @@ br .a {
   margin: 30px 0 3px 0;
   height: 50px;
   padding: 10px 0px 0px 10px;
-  border-radius: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 0 2px black;
+  font-weight: bold;
 }
 
 .loses {
@@ -222,7 +230,9 @@ br .a {
   color: red;
   height: 50px;
   padding: 10px 0px 0px 10px;
-  border-radius: 25px;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0 0 0 2px black;
 }
 
 .oposite {
